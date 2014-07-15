@@ -1,0 +1,35 @@
+{
+  
+  "name": "sitemap",
+  
+  "version": "0.0.0",
+  
+  "authors": [
+    "jpgary <jgary@hugeinc.com>"
+  ],
+  
+  "description": "sitemap",
+  
+  "license": "MIT",
+  
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  
+  "dependencies" : {
+    "jquery": "*",
+    "requirejs": "*",
+    "requirejs-plugins" : "*",
+    "modernizr" : "*",
+    "gsap"    : "*",
+    "fastclick" : "*",
+    "hammerjs" : "*",
+    "handlebars" : "*",
+    "requirejs-text" : "*"
+  }
+
+}
