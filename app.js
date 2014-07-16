@@ -14,7 +14,7 @@ var app = express();
 // var server = require('http').createServer(app);	
 
 
-app.use(express.static(config.root + '/../public'));
+app.use(express.static(config.root + 'public'));
 // Start the server by listening on <port>
 var port = config.port || 3000;
 
