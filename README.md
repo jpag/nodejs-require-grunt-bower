@@ -1,7 +1,7 @@
 ## TODO :
 
 	- generate require config off of the bower.json file.
-	- 
+	- add DB mongo support
 
 ## Folder structure
 ```
