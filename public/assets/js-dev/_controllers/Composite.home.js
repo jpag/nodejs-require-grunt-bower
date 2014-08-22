@@ -32,8 +32,8 @@
 
 
     resize : function(e,w,h){
-        // do stuff FIRST then dispatch the composite.resize:
-        
+        // Do custom logic first then dispatch the composite.resize:
+
         this._super(e,w,h);
     }
     

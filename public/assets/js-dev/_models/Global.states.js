@@ -1,6 +1,7 @@
 define([], function() {
   
   return {
+  	// examples:
     point 				: "point",
     userLocation 		: "user-location",
     directions 			: 'directions',

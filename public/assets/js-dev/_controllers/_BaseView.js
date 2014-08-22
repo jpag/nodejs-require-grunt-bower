@@ -1,5 +1,5 @@
 /*
- * 
+ * sets up the rendering and bind of events specific to this instance
  * 
  */
 
@@ -75,7 +75,10 @@
               Model.id = view.id;
             }
 
-            // inject extra partial models that might be needed for the handlebars template and partials
+            /*
+             * inject extra partial models that might be needed for 
+             * the templates to render fully
+             */
             for( var key in view._ExtraPartialModels) {
               view._Model[key] = view._ExtraPartialModels[key];
             }

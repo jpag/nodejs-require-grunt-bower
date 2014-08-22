@@ -1,5 +1,5 @@
 /*
- * 
+ * base class all views, components extend from.
  * 
  */
 
@@ -88,8 +88,8 @@
     // easy dom references:
     $doc  : $(document),
     $win  : $(window),
+    // this element
     $el   : null,
-    
     
     // classes
     cl : Classes,
@@ -101,7 +101,6 @@
 
     bindEvents : function() {
       this.$doc.on(Events.app.stateChange, this.stateChange.bind(this));
-      // this.$doc.on(Events.dom.resize, this.resize.bind(this));
     },
 
     stateChange : function(e, coords, type, pt ) {

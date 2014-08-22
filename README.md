@@ -1,7 +1,8 @@
 ## TODO :
 
-	- generate require config off of the bower.json file.
-	- add DB mongo support
+	- generate app.js - require config off of the bower.json request file.
+	- add DB support
+	- add r.js optimizer
 
 ## Folder structure
 ```
