@@ -1,5 +1,5 @@
-var env = process.env.NODE_ENV || 'local';
-var config = require('./config')[env];
+var env = require('./app.env');
+var config = require('./app.config')[env];
 var express = require('express');
 
 function trace(str) {

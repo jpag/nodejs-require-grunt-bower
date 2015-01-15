@@ -39,7 +39,9 @@
 ```
 ### Install bower packages
 ```
-	grunt setup
+	grunt setup -env [environment name]
+	this will default to local.
+	the -env tag creates an ignored file that manages your local configurations. in the app.config file.
 ```
 	(this will install all packages into the bower_components and then copy them into js-dev/_libs)
 

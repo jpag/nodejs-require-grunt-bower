@@ -91,11 +91,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 		
-	grunt.registerTask('setup',['download and add all 3rd party vendor libraries for front end'], function(){
+	grunt.registerTask('setup',['download and add all 3rd party vendor libraries for front end'], function(n){
+		var env = grunt.option('env') || 'local';
 		
 		grunt.task.run('bower:install');
 		grunt.task.run('clean:setup');
-
+		grunt.file.write('app.env.js', "module.exports = '"+env+"';");
 	});
 	
 	grunt.registerTask('default',['watch']);
