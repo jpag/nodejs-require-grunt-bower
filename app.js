@@ -1,4 +1,5 @@
-var env = require('./app.env');
+var localconfig = require('./app.localconfig');
+var env = localconfig.env;
 var config = require('./app.config')[env];
 var express = require('express');
 

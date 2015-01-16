@@ -96,7 +96,10 @@ module.exports = function(grunt) {
 		
 		grunt.task.run('bower:install');
 		grunt.task.run('clean:setup');
-		grunt.file.write('app.env.js', "module.exports = '"+env+"';");
+
+		var localconfig = "module.exports = {\n\tenv: '"+env+"',\n\t/*inject additional passwords here, they will not be added to the repo:*/\n};";
+		grunt.file.write('app.localconfig.js', localconfig);
+
 	});
 	
 	grunt.registerTask('default',['watch']);
