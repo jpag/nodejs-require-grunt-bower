@@ -24,3 +24,12 @@ var port = config.port || 3000;
 app.listen(port);
 trace(' - started on port: ' + port);
 trace(' - environment: ' + env);
+
+
+var module = require("./app.module");
+var mod = new module({});
+mod.on('event-emitted', funcHere);
+
+function funcHere(param) {
+	trace(" some func" + param );
+}
